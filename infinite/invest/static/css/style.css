@@ -1,0 +1,79 @@
+body {
+    background-color:aliceblue;
+    font-size: 16px;
+    font-family:Geneva;
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+header ul.nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 30px;
+    gap: 20px;
+    font-size: 24px;
+}
+
+header ul.nav li a, header ul.nav li form button{
+    background-color:aliceblue;
+    display: block;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    border-color: black;
+    border-style:solid;
+    border-width: 5px;
+    padding: 3px;
+}
+
+header ul.nav li a:hover, header ul.nav li form button:hover{
+    color:royalblue;
+    background-color:aliceblue;
+    border-color: aliceblue;
+    font-weight:610;
+}
+
+header .logo{
+    padding:25px;
+    font-size:50px;
+}
+
+footer{
+    position:fixed;
+    bottom:0%;
+}
+
+header form select {
+    margin: 1rem;
+    font-size: 30%;
+    
+}
+
+main form label {
+    display: inline-block;
+    width: 20vw;
+    min-width: 15rem;
+}
+
+main form input,
+main form textarea,
+main form select,
+main form button {
+    font-size: 100%;
+}
+
+main form .helptext{
+    display: block;
+    font-size: 80%;
+}
+
+
