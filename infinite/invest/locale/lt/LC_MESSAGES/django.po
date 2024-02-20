@@ -21,23 +21,23 @@ msgstr ""
 "1 : n % 1 != 0 ? 2: 3);\n"
 #: invest/templates/base.html:23
 msgid "admin"
-msgstr ""
+msgstr "adminas"
 
 #: invest/templates/base.html:25
 msgid "log out"
-msgstr ""
+msgstr "Atsijungti"
 
 #: invest/templates/base.html:27
 msgid "log in"
-msgstr ""
+msgstr "Prisijungti"
 
 #: invest/templates/base.html:28
 msgid "sign up"
-msgstr ""
+msgstr "Užsiregistruoti"
 
 #: invest/templates/invest/index.html:3
 msgid ""
 "Infinite is a company that provides infinite soliutions to financial "
 "stability, support and growth. With infinite you can feel safe that the "
 "money you earned are in good hands."
-msgstr ""
+msgstr "Infinite yra kompanija siekianti suteikti begalybe būdu pasiekti finansinį stabiluma, paramamą, bei augimą. Su infinite jūs galite jaustis saugūs kad jūsų pinigai geruose rankuose."

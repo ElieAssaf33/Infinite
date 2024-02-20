@@ -28,6 +28,17 @@
                 <li><a href="{% url 'signup' %}">{% trans "sign up"|capfirst %}</a></li>
             {% endif %}
         </ul>
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ redirect_to }}">
+            <select class="language" name="language" onchange="this.form.submit();">
+                {% for lang in LANGUAGES %}
+                    <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                        {{ lang.1 }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
     </header>
     <main> {% block content %}
         {% endblock content %}</main>

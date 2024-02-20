@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-20 09:09+0000\n"
+"POT-Creation-Date: 2024-02-20 09:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
 "11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
 "1 : n % 1 != 0 ? 2: 3);\n"
+
 #: user_profile/templates/registration/logged_out.html:2
 #: user_profile/templates/registration/logged_out.html:4
 msgid "See you later at"
@@ -124,12 +125,12 @@ msgid "signup for"
 msgstr ""
 
 #: user_profile/templates/user_profile/signup.html:4
-msgid "Sign up to"
-msgstr ""
+msgid "Join "
+msgstr "Prisijungti prie "
 
 #: user_profile/templates/user_profile/signup.html:8
-msgid "register"
-msgstr ""
+msgid "Create Account"
+msgstr "Sukurti paskyrą"
 
 #: user_profile/templates/user_profile/user_detail.html:2
 msgid "at"
