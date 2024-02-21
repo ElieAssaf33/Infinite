@@ -4,6 +4,9 @@ body {
     font-family:Geneva;
     display:flex;
     flex-direction: column;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    background-size: contain;
 }
 
 header{
@@ -12,28 +15,26 @@ header{
     flex-direction: row;
 }
 
-
-
 header ul.nav{
     display: flex;
     flex-direction: row;
     list-style-type: none;
     font-size: 30px;
     gap: 20px;
-    font-size: 24px;
 }
 
 header ul.nav li a, header ul.nav li form button{
     background-color:aliceblue;
-    display: block;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
     color: black;
     text-decoration: none;
     border-color: black;
     border-style:solid;
-    border-width: 5px;
-    padding: 3px;
-    font-size: 24px;
+    border-width: 3px;
+    padding: 5px;
+    font-size: 25px;
 }
 
 header ul.nav li a:hover, header ul.nav li form button:hover{
@@ -48,10 +49,6 @@ header .logo{
     font-size:50px;
 }
 
-footer{
-    position:fixed;
-    bottom:0%;
-}
 
 
 main form label {
@@ -65,17 +62,15 @@ main form textarea,
 main form select {
     font-size: 100%;
 }
+
 main form button{
     margin: 15px;
    font-size: 130%;
-   border-radius: 12px;
    background-color: aliceblue;
    border-color: black;
    border-width: 4px;
    border-style: solid;
 }
-
-
 
 main form .helptext{
     display: block;
@@ -87,11 +82,26 @@ main form .helptext{
 }
 header form select {
     margin: 2rem;
-    font-size: 130%;
     background-color: aliceblue;
     border-color: black;
     border-style: solid;
-    border-width: 4px;
-    
+    border-width: 3px; 
+    border-radius: 20px;
+    font-size: 130%;
+    padding: 7px;
 }
 
+footer ul.footnav {
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+}

@@ -109,8 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 LANGUAGES = [
-    (LANGUAGE_CODE, 'English'),
-    ('lt', 'Lietuvių'),
+    (LANGUAGE_CODE, 'En'),
+    ('lt', 'Lt'),
 ]
 
 TIME_ZONE = 'UTC'
@@ -132,7 +132,7 @@ MEDIA_ROOT = BASE_DIR.joinpath(MEDIA_URL)
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-LOGIN_REDIRECT_URL = '/'
+
 
 try:
     from .local_settings import *

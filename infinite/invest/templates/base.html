@@ -13,12 +13,13 @@
         <ul class = 'nav'>
             <li><a href = "{%url 'index' %}">Home</a></li>
             <li><a href = "{%url 'invest' %}">Invest</a></li>
+            <li><a href = "{%url 'loan' %}">loan</a></li>
             <li><span id ="bitcoin"></span></li>
         </ul>
         <span class="spacer"></span>
         <ul class="nav">
             {% if user.is_authenticated %}
-                <li><a href="{% url 'user_detail_current' %}">{{ user }}</a></li>
+                <li><a href="{% url 'user_detail_current' %}">{%trans 'Profile'%}</a></li>
                 {% if user.is_superuser or user.is_staff %}
                     <li><a href="{% url 'admin:index' %}">{% trans "admin"|capfirst %}</a></li>
                 {% endif %}
@@ -31,7 +32,7 @@
         <form action="{% url 'set_language' %}" method="post">
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ redirect_to }}">
-            <select class="language" name="language" onchange="this.form.submit();">
+            <select style = '-webkit-appearance: none;'  class="language" name="language" onchange="this.form.submit();">
                 {% for lang in LANGUAGES %}
                     <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
                         {{ lang.1 }}
@@ -44,7 +45,12 @@
         {% endblock content %}</main>
     <footer>
         {% block footer %}{% endblock footer %}
-            <p>&copy; 2024 Infinite Solutions</p>
+        <p> <ul class="foot">
+                &copy; 2024 Infinite Solutions
+            <ul class="footnav">
+                <a style="text-decoration:none; color:black;" href='https://twitter.com/Infinite67807'>{% trans 'Join on X' %}</a>
+            </ul>
+        </p>
     </footer>
 </body>
 </html>

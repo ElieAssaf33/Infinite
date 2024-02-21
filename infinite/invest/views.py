@@ -37,3 +37,6 @@ def invest(request:HttpRequest)-> HttpResponse:
     context = {'btc': btc, 'eth': eth}
     return render(request, 'invest/invest.html', context)
 
+def loan(request:HttpRequest) -> HttpResponse:
+    return render(request, 'invest/loan.html')
+
