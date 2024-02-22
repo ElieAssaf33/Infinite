@@ -1,6 +1,7 @@
 {% extends 'base.html' %}{% load i18n %}
 {% block title %}{% trans "log in to"|capfirst %} {{ block.super }}{% endblock title %}
 {% block content %}
+<ul class = 'text'>
 <h1>{% trans "log in to"|capfirst %} Infinite</h1>
 {% if form.errors %}
 <p class="box box-error">{% trans "Log in error. Please try again." %}</p>
@@ -15,4 +16,5 @@
 </form>
 <p><a href="{% url 'password_reset' %}">{% trans "forgot password?"|capfirst %}</a></p>
 <p>{% trans "If you do not have an account, please" %} <a href="{% url 'signup' %}">{% trans "sign up" %}</a>.
+</ul>
 {% endblock content %}

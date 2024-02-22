@@ -1,0 +1,1 @@
+UPDATE invest_btc SET ammount = 100 WHERE name = 'elie';

@@ -1,5 +1,14 @@
 {% extends "base.html" %}{% load static i18n %}
 {%block content%}
-<h>Investing is the best pick if you want secure a safe future, while your money being invested, it grows and gives you an opportunity t
-<br>Bitcoin: {{btc}} <br><br>Ethereum: {{eth}}</h>
+<ul class = 'text'>
+<h>Investing is the best pick if you want to secure a safe future.<br>With infinite you can invest in stocks and crypto currencies<br>At infinite there are no limits.<br></h>
+<br>Bitcoin: {{btc}}
+    <ul class = 'btc'>
+        <a style = 'text-decoration:none;color:black;' href ="{%url 'btc'%}">Invest</a>
+    </ul>
+<br>Ethereum: {{eth}}</h>
+    <ul class = 'btc'>
+        <a style = 'text-decoration:none;color:black;' href ="{%url 'eth'%}">Invest</a>
+    </ul>
+<ul>
 {%endblock content%}

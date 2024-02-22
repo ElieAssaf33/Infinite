@@ -1,10 +1,12 @@
 {% extends "base.html" %}{% load i18n %}
 {% block title %}{% trans "signup for"|capfirst %} {{ block.super }}{% endblock title %}
 {% block content %}
+<ul class = 'text'>
 <h1>{% trans "Join "|capfirst %}Infinite </h1>
 <form method="post" action="{{ request.path }}">
     {% csrf_token %}
     {{ form.as_p}}
     <p><button type="submit">{% trans "Create Account"|capfirst %}</button></p>
 </form>
+</ul>
 {% endblock content %}
